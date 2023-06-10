@@ -1,0 +1,27 @@
+Get http://localhost:8080/ws/dias.wsdl
+
+### 
+
+Post http://localhost:8080/ws
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://spring.io/guides/gs-producing-web-service">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gs:getDiasRequest>
+         <gs:name>Lunes</gs:name>
+      </gs:getDiasRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+###
+
+Post http://localhost:8080/ws
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://spring.io/guides/gs-producing-web-service">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gs:getDiasRequest>
+         <gs:name>Martes</gs:name>
+      </gs:getDiasRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
